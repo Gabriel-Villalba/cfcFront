@@ -1,0 +1,20 @@
+/* Navbar.css */
+
+.navbar {
+  transition: all 0.3s ease-in-out;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(37, 99, 235, 0.9); 
+}
+
+.navbar a {
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #b3c7f9;
+}
