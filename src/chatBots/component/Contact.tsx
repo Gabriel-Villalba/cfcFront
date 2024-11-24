@@ -1,119 +1,119 @@
-import { useState, useRef, useEffect } from 'react';
-import axios from 'axios';
-import image from "../../common/cfcLogo-removebg-preview.png";
+// import { useState, useRef, useEffect } from 'react';
+// import axios from 'axios';
+// import image from "../../common/cfcLogo-removebg-preview.png";
 
 
-const APIKEY = process.env.OPENAI_API_KEY;
+// const APIKEY = process.env.REACT_APP_OPENAI_API_KEY;
 
-const Contact: React.FC = () => {
-  const humanMessage = useRef<HTMLDivElement>(null);
-  const botMessage = useRef<HTMLDivElement>(null);
-  const input = useRef<HTMLInputElement>(null);
-  const date = new Date();
-  const day = date.getDay();
-  const month = date.getMonth();
-  const year = date.getFullYear();
-  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  const [dateTime] = useState(`${days[day]}, ${months[month]} ${year}`);
+// const Contact: React.FC = () => {
+//   const humanMessage = useRef<HTMLDivElement>(null);
+//   const botMessage = useRef<HTMLDivElement>(null);
+//   const input = useRef<HTMLInputElement>(null);
+//   const date = new Date();
+//   const day = date.getDay();
+//   const month = date.getMonth();
+//   const year = date.getFullYear();
+//   const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+//   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+//   const [dateTime] = useState(`${days[day]}, ${months[month]} ${year}`);
 
-  useEffect(() => {
-    checkStatus();
-  }, [dateTime]);
+//   useEffect(() => {
+//     checkStatus();
+//   }, [dateTime]);
 
-  const checkStatus = () => {
-    const status = document.querySelector(".status") as HTMLElement;
-    if (dateTime === "Tuesday, October 2023") {
-      status.innerHTML = "Fuera de linea";
-      status.style.color = "red";
-    } else {
-      status.innerHTML = "En linea";
-      status.style.color = "green";
-    }
-  };
+//   const checkStatus = () => {
+//     const status = document.querySelector(".status") as HTMLElement;
+//     if (dateTime === "Tuesday, October 2023") {
+//       status.innerHTML = "Fuera de linea";
+//       status.style.color = "red";
+//     } else {
+//       status.innerHTML = "En linea";
+//       status.style.color = "green";
+//     }
+//   };
 
-  const handleInput = async () => {
-    const botMessageElement = botMessage.current;
-    const humanMessageElement = humanMessage.current;
-    const inputElement = input.current;
+//   const handleInput = async () => {
+//     const botMessageElement = botMessage.current;
+//     const humanMessageElement = humanMessage.current;
+//     const inputElement = input.current;
 
-    if (!inputElement || !botMessageElement || !humanMessageElement) return;
+//     if (!inputElement || !botMessageElement || !humanMessageElement) return;
 
-    const userMessage = inputElement.value;
-    humanMessageElement.innerText = userMessage;
-    console.log(userMessage);
-    try {
-      const response = await axios.post(
-        'https://api.openai.com/v1/chat/completions',
-        {
-          model: "gpt-3.5-turbo",  
-          messages: [
-            { role: "system", content: "You are a helpful assistant." },
-            { role: "user", content: userMessage }
-          ],
-          max_tokens: 150,
-          temperature: 0.7,
-        },
-        {
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${APIKEY}`,
-          },
-        }
-      );
+//     const userMessage = inputElement.value;
+//     humanMessageElement.innerText = userMessage;
+//     console.log(userMessage);
+//     try {
+//       const response = await axios.post(
+//         'https://api.openai.com/v1/chat/completions',
+//         {
+//           model: "gpt-3.5-turbo",  
+//           messages: [
+//             { role: "system", content: "You are a helpful assistant." },
+//             { role: "user", content: userMessage }
+//           ],
+//           max_tokens: 150,
+//           temperature: 0.7,
+//         },
+//         {
+//           headers: {
+//             'Content-Type': 'application/json',
+//             'Authorization': `Bearer ${APIKEY}`,
+//           },
+//         }
+//       );
 
-      const botResponse = response.data.choices[0].message.content.trim();
-      botMessageElement.innerText = botResponse;
-    } catch (error) {
-      botMessageElement.innerText = "Lo siento, hubo un error al procesar tu solicitud.";
-      console.error("Error al llamar a la API de OpenAI:", error);
-    }
+//       const botResponse = response.data.choices[0].message.content.trim();
+//       botMessageElement.innerText = botResponse;
+//     } catch (error) {
+//       botMessageElement.innerText = "Lo siento, hubo un error al procesar tu solicitud.";
+//       console.error("Error al llamar a la API de OpenAI:", error);
+//     }
 
-    inputElement.value = "";
-  };
+//     inputElement.value = "";
+//   };
 
-  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter") {
-      handleInput();
-    }
-  };
+//   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+//     if (e.key === "Enter") {
+//       handleInput();
+//     }
+//   };
 
-  return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
-        <div className="flex items-center mb-4">
-          <img src={image} alt="Bot" className="w-12 h-12 rounded-full mr-4" />
-          <div>
-            <h2 className="text-xl font-bold">Charlemos</h2>
-            <div className="status text-sm text-green-500">En linea</div>
-          </div>
-        </div>
-        <div className="h-48 overflow-y-auto bg-gray-50 p-4 rounded-lg mb-4">
-          <div className="bot-message mb-2" id="message1" ref={botMessage}></div>
-          <div className="human-message mb-2" id="message2" ref={humanMessage}></div>
-        </div>
-        <div className="flex">
-          <input
-            type="text"
-            id="input"
-            placeholder="Escribe tu mensaje ..."
-            ref={input}
-            className="flex-1 p-2 border rounded-l-lg"
-            onKeyPress={handleKeyPress}
-          />
-          <button
-            onClick={handleInput}
-            className="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700 transition duration-300"
-          >
-            <i className="fas fa-paper-plane"></i> Enviar
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-};
+//   return (
+//     <div className="flex items-center justify-center min-h-screen bg-gray-100">
+//       <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
+//         <div className="flex items-center mb-4">
+//           <img src={image} alt="Bot" className="w-12 h-12 rounded-full mr-4" />
+//           <div>
+//             <h2 className="text-xl font-bold">Charlemos</h2>
+//             <div className="status text-sm text-green-500">En linea</div>
+//           </div>
+//         </div>
+//         <div className="h-48 overflow-y-auto bg-gray-50 p-4 rounded-lg mb-4">
+//           <div className="bot-message mb-2" id="message1" ref={botMessage}></div>
+//           <div className="human-message mb-2" id="message2" ref={humanMessage}></div>
+//         </div>
+//         <div className="flex">
+//           <input
+//             type="text"
+//             id="input"
+//             placeholder="Escribe tu mensaje ..."
+//             ref={input}
+//             className="flex-1 p-2 border rounded-l-lg"
+//             onKeyPress={handleKeyPress}
+//           />
+//           <button
+//             onClick={handleInput}
+//             className="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700 transition duration-300"
+//           >
+//             <i className="fas fa-paper-plane"></i> Enviar
+//           </button>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
-export default Contact;
+// export default Contact;
 
 
 

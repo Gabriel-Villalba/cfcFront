@@ -19,7 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/eventos" element={<Events />} />
-            <Route path="/contacto" element={<Contact />} />
+            {/* <Route path="/contacto" element={<Contact />} /> */}
             <Route path="/reuniones" element={<Meetings />} />
             {/* <Route path="/ofrenda" element={<Offering />} />
             <Route path="/quiero-gv" element={<LifeGroup />} /> */}

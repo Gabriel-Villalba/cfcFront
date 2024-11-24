@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
           <div className="flex flex-col items-center space-y-2 mt-4">
             <Link to="/" className="hover:text-blue-200" onClick={handleLinkClick}>Inicio</Link>
             <Link to="/eventos" className="hover:text-blue-200" onClick={handleLinkClick}>Eventos</Link>
-            <Link to="/contacto" className="hover:text-blue-200" onClick={handleLinkClick}>Contacto</Link>
+            {/* <Link to="/contacto" className="hover:text-blue-200" onClick={handleLinkClick}>Contacto</Link> */}
             <Link to="/reuniones" className="hover:text-blue-200" onClick={handleLinkClick}>Reuniones</Link>
             {/* <Link to="/ofrenda" className="hover:text-blue-200" onClick={handleLinkClick}>Ofrenda</Link>
             <Link to="/quiero-gv" className="hover:text-medium-blue" onClick={handleLinkClick}>Quiero GV</Link>
