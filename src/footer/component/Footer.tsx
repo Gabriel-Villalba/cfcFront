@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-2">Contáctanos</h4>
             <p>Avenida Williner 350, Rafaela, Santa Fe</p>
             <p>Email: cfcoficinarafaela@gmail.com</p>
-            <p>Teléfono: (3492) 456-7890</p>
+            <p>Teléfono: (3492)604804 </p>
           </div>
           <div className="w-full md:w-1/3 text-center md:text-right">
             <h4 className="text-lg font-semibold mb-2">Síguenos</h4>

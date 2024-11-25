@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './navBar/components/Navbar';
 import Home from './home/component/Home';
 import Events from './events/Events';
-import Contact from './chatBots/component/Contact';
+//import Contact from './chatBots/component/Contact';
 import Meetings from './meetings/components/Meetings';
 //import Offering from './offering/components/Offering';
 //import HowToGet from './components/HowToGet';
