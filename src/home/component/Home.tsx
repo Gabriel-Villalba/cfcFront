@@ -1,11 +1,11 @@
-
+import image from "../../common/PLACA DE BIENVENIDA.png";
 const Home: React.FC = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center">
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
-          backgroundImage: `url("https://static.wixstatic.com/media/e77a33_d8ce2ed7ddbb4d22920bb90f1dd83f7b~mv2.jpg/v1/fill/w_960,h_640,al_c,q_85,enc_auto/e77a33_d8ce2ed7ddbb4d22920bb90f1dd83f7b~mv2.jpg")`,
+          backgroundImage: `url(${image})`,
         }}
       ></div>
       <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
