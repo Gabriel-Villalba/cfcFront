@@ -62,9 +62,7 @@ const Inscripciones: React.FC = () => {
   // };
 
   return (
-    <div className="container mx-auto py-8 px-4">
-
-
+    <div className="container mx-auto py-8 px-4 bg-blue-100">
     <div className="container mx-auto px-4">
       {/* <!-- <div className="titulo text-center my-4">
           <img className="w-full max-w-lg mx-auto" src="/assets/logoCfc.jpg" alt="Agotado">
