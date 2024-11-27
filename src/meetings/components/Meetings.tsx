@@ -1,13 +1,13 @@
 
 import { Clock } from 'lucide-react';
-
+import img from "../img/fondo.png"
 const Meetings: React.FC = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center">
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1490730141103-6cac27aaab94?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
+          backgroundImage: `url(${img})`,
         }}
       ></div>
       <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
