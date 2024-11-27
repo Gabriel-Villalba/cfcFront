@@ -5,7 +5,7 @@ const Meetings: React.FC = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center">
       <div
-        className="absolute inset-0 bg-cover bg-center z-0"
+        className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url(${img})`,
         }}
@@ -20,11 +20,7 @@ const Meetings: React.FC = () => {
           </div>
           <div className="flex items-center">
             <Clock className="mr-2" />
-            <p className="text-lg md:text-xl">Domingo 10:00 hs</p>
-          </div>
-          <div className="flex items-center">
-            <Clock className="mr-2" />
-            <p className="text-lg md:text-xl">Domingo 20:00 hs</p>
+            <p className="text-lg md:text-xl">Domingos 10:00 hs y 20:00 hs</p>
           </div>
         </div>
       </div>

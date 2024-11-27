@@ -18,19 +18,19 @@ const Inscripciones: React.FC = () => {
           </div>
           <div className="funciones flex flex-col items-center gap-4 my-4">
             <div className="containerLink bg-blue-500 text-white p-4 rounded shadow hover:bg-blue-600 w-full max-w-md">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdF9Sg9MlGLbUdCQhhJciq52jdpExT1rYIsKdRzN6xOBxIfMg/viewform" target="_blank" className="block text-center">Función sábado 20hs</a>
+              <a href="https://forms.gle/vSF6ggLbKqtAsQ7H7" target="_blank" className="block text-center">Función sábado 20hs</a>
             </div>
           </div>
           <br></br>
           <div className="funciones flex flex-col items-center gap-4 my-4">
             <div className="containerLink bg-blue-500 text-white p-4 rounded shadow hover:bg-blue-600 w-full max-w-md">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdF9Sg9MlGLbUdCQhhJciq52jdpExT1rYIsKdRzN6xOBxIfMg/viewform" target="_blank" className="block text-center">Función domingo 18hs</a>
+              <a href="https://forms.gle/nqct2d7qZUisicKq8" target="_blank" className="block text-center">Función domingo 18hs</a>
             </div>
           </div>
           <br></br>
           <div className="funciones flex flex-col items-center gap-4 my-4">
             <div className="containerLink bg-blue-500 text-white p-4 rounded shadow hover:bg-blue-600 w-full max-w-md">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdF9Sg9MlGLbUdCQhhJciq52jdpExT1rYIsKdRzN6xOBxIfMg/viewform" target="_blank" className="block text-center">Función domingo 20hs</a>
+              <a href="https://forms.gle/m9RGCiGwzchmoFjE8" target="_blank" className="block text-center">Función domingo 20hs</a>
             </div>
           </div>
         </div>
