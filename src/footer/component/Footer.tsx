@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Youtube } from 'lucide-react';
+import { FaFacebook, FaInstagram, FaYoutube, FaMapMarker, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   return (
@@ -12,18 +12,24 @@ const Footer: React.FC = () => {
           </div>
           <div className="w-full md:w-1/3 text-center mb-4 md:mb-0">
             <h4 className="text-lg font-semibold mb-2">Contáctanos</h4>
-            <p>Avenida Williner 350, Rafaela, Santa Fe</p>
-            <p>Email: cfcoficinarafaela@gmail.com</p>
-            <p>Teléfono: (3492)604804 </p>
+            <p>
+              <a href="mailto:cfcoficinarafaela@gmail.com" className="hover:text-blue-400">
+                <FaEnvelope className="inline-block" size={30} />
+              </a>
+            </p>
+            <p>
+              <a href="https://web.whatsapp.com/send?phone=3492704952" target="_blank" className="hover:text-green-500">
+                <FaWhatsapp className="inline-block" size={30} />
+              </a>
+            </p>
+            <p><FaMapMarker className="inline-block" size={30} /> Av. Williner 350, Rafaela</p>
           </div>
           <div className="w-full md:w-1/3 text-center md:text-right">
             <h4 className="text-lg font-semibold mb-2">Síguenos</h4>
             <div className="flex justify-center md:justify-end space-x-4">
-              <a href="#" className="hover:text-blue-400"><Facebook size={20} /></a>
-              {/* <a href="https://www.instagram.com/cfcrafaela/?hl=es" className="hover:text-pink-400"><Instagram size={20} /></a> */}
-              <a href="https://www.instagram.com/cfcrafaela/?hl=es" target="_blank" className="hover:text-pink-400"> <Instagram size={20} /></a>
-
-              <a href="https://www.youtube.com/results?search_query=cfc+rafaela" target="_blank" className="hover:text-red-600"><Youtube size={20} /></a>
+              <a href="#" className="hover:text-blue-400"><FaFacebook size={30} /></a>
+              <a href="https://www.instagram.com/cfcrafaela/?hl=es" target="_blank" className="hover:text-pink-400"><FaInstagram size={30} /></a>
+              <a href="https://www.youtube.com/results?search_query=cfc+rafaela" target="_blank" className="hover:text-red-600"><FaYoutube size={30} /></a>
             </div>
           </div>
         </div>
