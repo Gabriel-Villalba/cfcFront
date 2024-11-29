@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import imageDesktop from "../img/PAGINA_WAB_DESKTOP.png";
-import imageMobile from "../img/PAGINA WAB_MOBILE.png";
+import imageDesktop from "../img/fondoDesktop.png";
+import imageMobile from "../img/fondoMobil.jpeg";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
