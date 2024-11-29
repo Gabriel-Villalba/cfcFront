@@ -16,11 +16,11 @@ const Meetings: React.FC = () => {
         <div className="flex flex-col items-center space-y-4">
           <div className="flex items-center">
             <Clock className="mr-2" />
-            <p className="text-lg md:text-xl">Miércoles 20:00 hs</p>
+            <p className="text-lg md:text-xl">Miércoles 20 hs</p>
           </div>
           <div className="flex items-center">
             <Clock className="mr-2" />
-            <p className="text-lg md:text-xl">Domingos 10:00 hs y 20:00 hs</p>
+            <p className="text-lg md:text-xl">Domingos 10 hs y 20 hs</p>
           </div>
         </div>
       </div>
