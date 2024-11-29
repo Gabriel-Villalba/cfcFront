@@ -14,7 +14,7 @@ const Inscripciones: React.FC = () => {
       <div className="container mx-auto py-8 px-4">
         <div className="container mx-auto px-4">
           <div className="instructivo text-center my-4">
-            <h1 className="text-2xl md:text-3xl font-bold text-center mb-8 text-white">¡Elegi la función e inscribite!</h1>
+            <h1 className="text-2xl md:text-3xl font-bold text-center mb-8 text-white">¡Elegí la función e inscribite!</h1>
           </div>
           <div className="funciones flex flex-col items-center gap-4 my-4">
             <div className="containerLink bg-blue-500 text-white p-4 rounded shadow hover:bg-blue-600 w-full max-w-md">
