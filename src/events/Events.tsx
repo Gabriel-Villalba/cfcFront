@@ -1,15 +1,18 @@
-import React from 'react';
-//import Slider from 'react-slick';
+import React, { useEffect } from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import fondoNavidad from "./img/fondoNavidad.png";
 
 const Inscripciones: React.FC = () => {
 
+  useEffect(() => {
+    window.scrollTo(0, 0); // Desplaza la página a la parte superior al cargar el componente
+  }, []);
+
   return (
     <div
       className="relative bg-cover bg-center"
-      style={{ backgroundImage: `url(${fondoNavidad})`, height: '80vh', width:'100vw' }}
+      style={{ backgroundImage: `url(${fondoNavidad})`, height: '80vh', width: '100vw' }}
     >
       <div className="container mx-auto py-8 px-4">
         <div className="container mx-auto px-4">
