@@ -6,7 +6,7 @@ import fondoNavidad from "./img/fondoNavidad.png";
 const Inscripciones: React.FC = () => {
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Desplaza la página a la parte superior al cargar el componente
+    window.scrollTo(0, 200); // Desplaza la página a la parte superior al cargar el componente
   }, []);
 
   return (

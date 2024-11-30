@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import imageDesktop from "../img/fondoDesktop.png";
 import imageMobile from "../img/fondoMobil.jpeg";
 
 const Home: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 70); // Desplaza la página a la parte superior al cargar el componente
+  }, []);
+
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
