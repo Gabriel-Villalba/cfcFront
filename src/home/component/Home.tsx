@@ -5,7 +5,7 @@ import imageMobile from "../img/fondoMobil.jpeg";
 
 const Home: React.FC = () => {
   useEffect(() => {
-    window.scrollTo(0, 70); // Desplaza la página a la parte superior al cargar el componente
+    window.scrollTo(0, 80); // Desplaza la página a la parte superior al cargar el componente
   }, []);
 
   const navigate = useNavigate();
