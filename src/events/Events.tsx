@@ -3,7 +3,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import fondoNavidad from "./img/fondoNavidad.png";
 
-const Inscripciones: React.FC = () => {
+const Events: React.FC = () => {
 
   useEffect(() => {
     window.scrollTo(0,0); // Desplaza la página a la parte superior al cargar el componente
@@ -42,4 +42,4 @@ const Inscripciones: React.FC = () => {
   );
 };
 
-export default Inscripciones;
+export default Events;
