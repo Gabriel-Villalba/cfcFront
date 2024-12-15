@@ -28,17 +28,17 @@ const Events: React.FC = () => {
           <div className="instructivo text-center my-4">
             <h1 className="text-2xl md:text-3xl font-bold text-center mb-8 text-white">¡Elegí la función e inscribite!</h1>
           </div>
-          <div className="funciones flex flex-col items-center gap-4 my-4">
+           <div className="funciones flex flex-col items-center gap-4 my-4">
             <div className="containerLink bg-blue-500 text-white p-4 rounded shadow hover:bg-blue-600 w-full max-w-md">
               {/* <a href="https://forms.gle/vSF6ggLbKqtAsQ7H7" target="_blank" className="block text-center">Función Sábado 14 - 20 hs</a> */}
               <button onClick={handleButtonClick} className="block text-center w-full">Función Sábado 14 - 20 hs</button>
             </div>
-          </div>
+          </div> 
           <br></br>
           <div className="funciones flex flex-col items-center gap-4 my-4">
             <div className="containerLink bg-blue-500 text-white p-4 rounded shadow hover:bg-blue-600 w-full max-w-md">
-               {/* <a href="https://forms.gle/nqct2d7qZUisicKq8" target="_blank" className="block text-center">Función Domingo 15 - 18 hs</a>*/}
-             <button onClick={handleButtonClick} className="block text-center w-full">Función Domingo 15 - 18 hs</button> 
+             <a href="https://forms.gle/nqct2d7qZUisicKq8" target="_blank" className="block text-center">Función Domingo 15 - 18 hs</a>
+             {/*<button onClick={handleButtonClick} className="block text-center w-full">Función Domingo 15 - 18 hs</button> */}
             </div>
           </div>
           <br></br>
