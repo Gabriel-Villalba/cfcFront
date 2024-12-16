@@ -37,15 +37,15 @@ const Events: React.FC = () => {
           <br></br>
           <div className="funciones flex flex-col items-center gap-4 my-4">
             <div className="containerLink bg-blue-500 text-white p-4 rounded shadow hover:bg-blue-600 w-full max-w-md">
-             <a href="https://forms.gle/nqct2d7qZUisicKq8" target="_blank" className="block text-center">Función Domingo 15 - 18 hs</a>
-             {/*<button onClick={handleButtonClick} className="block text-center w-full">Función Domingo 15 - 18 hs</button> */}
+               {/*<a href="https://forms.gle/nqct2d7qZUisicKq8" target="_blank" className="block text-center">Función Domingo 15 - 18 hs</a>*/}
+           <button onClick={handleButtonClick} className="block text-center w-full">Función Domingo 15 - 18 hs</button> 
             </div>
           </div>
           <br></br>
           <div className="funciones flex flex-col items-center gap-4 my-4">
             <div className="containerLink bg-blue-500 text-white p-4 rounded shadow hover:bg-blue-600 w-full max-w-md">
-            <a href="https://forms.gle/m9RGCiGwzchmoFjE8" target="_blank" className="block text-center">Función Domingo 15 - 20 hs</a>
-              {/* <button onClick={handleButtonClick} className="block text-center w-full">Función Domingo 15 - 20 hs</button> */}
+                {/* <a href="https://forms.gle/m9RGCiGwzchmoFjE8" target="_blank" className="block text-center">Función Domingo 15 - 20 hs</a>*/}
+               <button onClick={handleButtonClick} className="block text-center w-full">Función Domingo 15 - 20 hs</button> 
             </div>
           </div>
         </div>
