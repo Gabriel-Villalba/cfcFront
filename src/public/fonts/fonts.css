@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+
+/* Definiciones de font-face para HouschkaRounded */
+@font-face {
+  font-family: 'HouschkaRounded';
+  src: url('/fonts/HouschkaRoundedRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HouschkaRounded';
+  src: url('/fonts/HouschkaRoundedBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HouschkaRounded';
+  src: url('/fonts/HouschkaRoundedExtraBold.ttf') format('truetype');
+  font-weight: 900; /* ExtraBold */
+  font-style: normal;
+}
+
+/* Aplicar la fuente Nunito */
+.nunito {
+  font-family: 'Nunito', serif;
+  font-weight: 800;
+  font-style: normal;
+}
