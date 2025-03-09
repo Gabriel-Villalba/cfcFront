@@ -97,7 +97,16 @@ const Inscripciones: React.FC = () => {
         <h1 className="text-center text-4xl font-bold text-white mb-8">Actividades CFC</h1>
         <div
           className="carousel-container"
-          style={{ overflow: 'hidden', height: '100%', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+          style={{
+            overflow: 'hidden',
+            height: '100%',
+            position: 'relative',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            margin: '0 auto', // Centra horizontalmente el contenedor del carrusel
+            maxWidth: '100%', // Limita el ancho máximo del contenedor
+          }}
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
         >
@@ -110,12 +119,11 @@ const Inscripciones: React.FC = () => {
                 transition: 'transform 0.5s ease',
                 position: 'relative',
                 textAlign: 'center', // Centra las imágenes horizontalmente
-                marginLeft: '35px', // Añadir margen izquierdo
-                width: '100%', 
+                width: '100%',
               }}
             >
-              <img src={isMobile ? image.mobile : image.desktop} alt={image.alt} className="carousel-image" style={{ width: '90%', height: 'auto', maxHeight: '60vh', objectFit: 'contain' }} />
-              <div className="containerLink bg-blue-500 text-white p-4 rounded shadow hover:bg-blue-600 mb-4 mx-auto" style={{ width: '90%' }}>
+              <img src={isMobile ? image.mobile : image.desktop} alt={image.alt} className="carousel-image" style={{ width: '100%', height: 'auto', maxHeight: '60vh', objectFit: 'contain' }} />
+              <div className="containerLink bg-blue-500 text-white p-4 rounded shadow hover:bg-blue-600 mb-4 mx-auto" style={{ width: '80%' }}>
                 <a href={image.link} className="block text-center w-full">{image.linkText}</a>
               </div>
             </div>
