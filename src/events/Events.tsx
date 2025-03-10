@@ -95,6 +95,7 @@ const Inscripciones: React.FC = () => {
     >
       <div className="container mx-auto py-8 px-4">
         <h1 className="text-center text-4xl font-bold text-white mb-8">Actividades CFC</h1>
+       
         <div
           className="carousel-container"
           style={{
@@ -128,8 +129,8 @@ const Inscripciones: React.FC = () => {
               </div>
             </div>
           ))}
-          <button onClick={handlePrev} style={{ position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)', backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', border: 'none', borderRadius: '50%', padding: '0.5rem', cursor: 'pointer' }}>❮</button>
-          <button onClick={handleNext} style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', border: 'none', borderRadius: '50%', padding: '0.5rem', cursor: 'pointer' }}>❯</button>
+          <button onClick={handlePrev} style={{ position: 'absolute', left: '20px', top: '50%', transform: 'translateY(-50%)', backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', border: 'none', borderRadius: '50%', padding: '0.5rem', cursor: 'pointer' }}>❮</button>
+          <button onClick={handleNext} style={{ position: 'absolute', right: '20px', top: '50%', transform: 'translateY(-50%)', backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', border: 'none', borderRadius: '50%', padding: '0.5rem', cursor: 'pointer' }}>❯</button>
         </div>
       </div>
     </div>
