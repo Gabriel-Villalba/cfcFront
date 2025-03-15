@@ -28,13 +28,13 @@ const images = [
     link: 'https://forms.gle/u2rr8nTpmfTqBGrR7',
     linkText: '¡Quiero ser parte!',
   },
-  {
+  /*{
     mobile: vigiliaCel,
     desktop: vigiliaDesktop,
     alt: 'Vigilia',
     link: 'https://forms.gle/i16FgDt16uUQZ9q88',
     linkText: '¡Quiero ser parte!',
-  },
+  },*/
   {
     mobile: EscVidaCel,
     desktop: EscVidaDesktop,
