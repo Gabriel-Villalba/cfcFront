@@ -2,16 +2,16 @@ import React, { useEffect, useState } from 'react';
 import fondoEventosCel from './img/fondoEventosCel.png';
 import megaRestartCel from './img/placa megarestartCel.png';
 import bautismosCel from './img/PAGINABautismoCel.png';
-import vigiliaCel from './img/placa VigiliaCel.png';
+/*import vigiliaCel from './img/placa VigiliaCel.png';*/
 import EscVidaCel from './img/placaEvCel.png';
-import nocheRestartCel from './img/nocheRestartCel.png';
+//import nocheRestartCel from './img/nocheRestartCel.png';
 
 import fondoEventosDesktop from './img/fondoEventosCel.png';
 import megaRestartDesktop from './img/placa megarestartPc.png';
 import bautismosDesktop from './img/PLACASBautismoPc 25 (1).png';
-import vigiliaDesktop from './img/placaVigiliaPc.png';
+/*import vigiliaDesktop from './img/placaVigiliaPc.png';*/
 import EscVidaDesktop from './img/placaEvPc.png';
-import nocheRestartDesktop from './img/nocheRestartPc.png';
+//import nocheRestartDesktop from './img/nocheRestartPc.png';
 
 const images = [
   {
@@ -42,13 +42,13 @@ const images = [
     link: 'https://forms.gle/EZFkgWwqT2DPFV487',
     linkText: '¡Quiero ser parte!',
   },
-  {
-    mobile: nocheRestartCel,
-    desktop: nocheRestartDesktop,
-    alt: 'Noche Restart',
-    link: 'https://forms.gle/opSehbbUjjgPdibP8',
-    linkText: '¡Quiero ser parte!',
-  },
+  // {
+  //   mobile: nocheRestartCel,
+  //   desktop: nocheRestartDesktop,
+  //   alt: 'Noche Restart',
+  //   link: 'https://forms.gle/opSehbbUjjgPdibP8',
+  //   linkText: '¡Quiero ser parte!',
+  // },
 ];
 
 const Inscripciones: React.FC = () => {
