@@ -20,7 +20,7 @@ const Meetings: React.FC = () => {
           </div>
           <div className="flex items-center">
             <Clock className="mr-2" />
-            <p className="text-lg md:text-xl">Domingos 10 hs y 20 hs</p>
+            <p className="text-lg md:text-xl">Domingos 9:30 hs y 11 hs</p>
           </div>
         </div>
       </div>
