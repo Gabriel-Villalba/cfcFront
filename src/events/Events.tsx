@@ -1,47 +1,57 @@
 import React, { useEffect, useState } from 'react';
 import fondoEventosCel from './img/fondoEventosCel.png';
-import megaRestartCel from './img/placa megarestartCel.png';
-import bautismosCel from './img/PAGINABautismoCel.png';
+
+import peñaDescktop from './img/peñaDescktop.png';
+import peñaMobile from './img/peñaMobile.png';
+
+import seminarioMatriDescktop from './img/seminarioMatriDescktop.png';
+import seminarioMatriMobile from './img/seminarioMatriMobile.png';
+
+import extensionDescktop from './img/extensionDescktop.png';
+import extensionMobile from './img/extensionMobile.png';
+
+//import megaRestartCel from './img/placa megarestartCel.png';
+//import bautismosCel from './img/PAGINABautismoCel.png';
 /*import vigiliaCel from './img/placa VigiliaCel.png';*/
-import EscVidaCel from './img/placaEvCel.png';
+//import EscVidaCel from './img/placaEvCel.png';
 //import nocheRestartCel from './img/nocheRestartCel.png';
 
 import fondoEventosDesktop from './img/fondoEventosCel.png';
-import megaRestartDesktop from './img/placa megarestartPc.png';
-import bautismosDesktop from './img/PLACASBautismoPc 25 (1).png';
+//import megaRestartDesktop from './img/placa megarestartPc.png';
+//import bautismosDesktop from './img/PLACASBautismoPc 25 (1).png';
 /*import vigiliaDesktop from './img/placaVigiliaPc.png';*/
-import EscVidaDesktop from './img/placaEvPc.png';
+//import EscVidaDesktop from './img/placaEvPc.png';
 //import nocheRestartDesktop from './img/nocheRestartPc.png';
 
 const images = [
   {
-    mobile: megaRestartCel,
-    desktop: megaRestartDesktop,
+    mobile:peñaMobile,
+    desktop:peñaDescktop,
     alt: 'Mega Restart',
-    link: 'https://forms.gle/7BF2kyNSh9pj7pVa9',
+    link: 'https://forms.gle/NpAPJ1z9ty2stWsQ6',
     linkText: '¡Quiero ser parte!',
   },
   {
-    mobile: bautismosCel,
-    desktop: bautismosDesktop,
+    mobile: seminarioMatriMobile,
+    desktop: seminarioMatriDescktop,
     alt: 'Bautismos',
-    link: 'https://forms.gle/u2rr8nTpmfTqBGrR7',
+    link: 'https://forms.gle/Fv6myrRBmj7S8HYL7',
     linkText: '¡Quiero ser parte!',
   },
-  /*{
-    mobile: vigiliaCel,
-    desktop: vigiliaDesktop,
-    alt: 'Vigilia',
-    link: 'https://forms.gle/i16FgDt16uUQZ9q88',
-    linkText: '¡Quiero ser parte!',
-  },*/
   {
+    mobile: extensionMobile,
+    desktop: extensionDescktop,
+    alt: 'Vigilia',
+    link: 'https://forms.gle/6TzAkuL6zTBThCGY8',
+    linkText: '¡Quiero ser parte!',
+  },
+ /* {
     mobile: EscVidaCel,
     desktop: EscVidaDesktop,
     alt: 'Escuela de Vida',
     link: 'https://forms.gle/EZFkgWwqT2DPFV487',
     linkText: '¡Quiero ser parte!',
-  },
+  }*/
   // {
   //   mobile: nocheRestartCel,
   //   desktop: nocheRestartDesktop,
