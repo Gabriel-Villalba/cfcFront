@@ -1,6 +1,6 @@
 import React from 'react';
-import imageDesktop from "../img/PLACA DE BIENVENIDA.png";
-import imageMobil from "../img/PLACA DE BIENVENIDA.png";
+import imageDesktop from "../img/QUEREMOS CONOCERTEdescktop.png";
+import imageMobil from "../img/QUEREMOS CONOCERTEmobile.png";
 import '../../public/fonts/fonts.css';
 
 const Home: React.FC = () => {
@@ -21,13 +21,13 @@ const Home: React.FC = () => {
         }}
       ></div>
       <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-      <div className="relative z-20 text-center text-white px-4">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 nunito">
+       <div className="relative z-20 text-center text-white px-4">
+        {/* <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 nunito">
           CFC Rafaela
-        </h1>
-        <p className="text-xl md:text-2xl font-bold lg:text-3xl nunito">
+        </h1> */}
+        {/* <p className="text-xl md:text-2xl font-bold lg:text-3xl nunito">
           Una iglesia para toda la familia
-        </p>
+        </p> */}
       </div>
     </div>
   );
