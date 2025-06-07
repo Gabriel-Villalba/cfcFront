@@ -24,13 +24,13 @@ import fondoEventosDesktop from './img/fondoEventosCel.png';
 //import nocheRestartDesktop from './img/nocheRestartPc.png';
 
 const images = [
-  {
-    mobile:peñaMobile,
-    desktop:peñaDescktop,
-    alt: 'Mega Restart',
-    link: 'https://forms.gle/NpAPJ1z9ty2stWsQ6',
-    linkText: '¡Quiero ser parte!',
-  },
+  // {
+  //   mobile:peñaMobile,
+  //   desktop:peñaDescktop,
+  //   alt: 'Mega Restart',
+  //   link: 'https://forms.gle/NpAPJ1z9ty2stWsQ6',
+  //   linkText: '¡Quiero ser parte!',
+  // },
   {
     mobile: seminarioMatriMobile,
     desktop: seminarioMatriDescktop,
