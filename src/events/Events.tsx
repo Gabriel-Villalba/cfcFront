@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import fondoEventosCel from './img/fondoEventosCel.png';
 
-import peñaDescktop from './img/peñaDescktop.png';
-import peñaMobile from './img/peñaMobile.png';
+// import peñaDescktop from './img/peñaDescktop.png';
+// import peñaMobile from './img/peñaMobile.png';
 
-import seminarioMatriDescktop from './img/seminarioMatriDescktop.png';
-import seminarioMatriMobile from './img/seminarioMatriMobile.png';
+// import seminarioMatriDescktop from './img/seminarioMatriDescktop.png';
+// import seminarioMatriMobile from './img/seminarioMatriMobile.png';.
+import restArtMobile from './img/restArtMobile (1).png';
+import restArtDescktop from './img/restartDescktop.png';
 
 import extensionDescktop from './img/extensionDescktop.png';
 import extensionMobile from './img/extensionMobile.png';
@@ -31,11 +33,18 @@ const images = [
   //   link: 'https://forms.gle/NpAPJ1z9ty2stWsQ6',
   //   linkText: '¡Quiero ser parte!',
   // },
+  // {
+  //   mobile: seminarioMatriMobile,
+  //   desktop: seminarioMatriDescktop,
+  //   alt: 'Bautismos',
+  //   link: 'https://forms.gle/Fv6myrRBmj7S8HYL7',
+  //   linkText: '¡Quiero ser parte!',
+  // },
   {
-    mobile: seminarioMatriMobile,
-    desktop: seminarioMatriDescktop,
-    alt: 'Bautismos',
-    link: 'https://forms.gle/Fv6myrRBmj7S8HYL7',
+    mobile: restArtMobile,
+    desktop: restArtDescktop,
+    alt: 'Vigilia',
+    link: 'https://forms.gle/ZSrVQLczg9G418gMA',
     linkText: '¡Quiero ser parte!',
   },
   {
